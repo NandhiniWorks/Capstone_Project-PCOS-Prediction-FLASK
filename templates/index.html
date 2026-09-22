@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>AI-Powered PCOS Prediction System</title>
+</head>
+
+<body>
+
+```
+<h1>AI-Powered PCOS Prediction System</h1>
+
+<p>Enter the patient's details below.</p>
+
+<form method="POST">
+
+    <label>Cycle:</label>
+    <select name="cycle">
+        <option value="Regular">Regular</option>
+        <option value="Irregular">Irregular</option>
+    </select>
+
+    <br><br>
+
+    <label>Beta-HCG-II:</label>
+    <input type="number" step="any" name="beta_hcg_ii" value="0">
+
+    <br><br>
+
+    <label>Hair Growth:</label>
+    <select name="hair_growth">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+    </select>
+
+    <br><br>
+
+    <label>Follicle Left:</label>
+    <input type="number" step="any" name="follicle_left" value="0">
+
+    <br><br>
+
+    <label>Follicle Right:</label>
+    <input type="number" step="any" name="follicle_right" value="0">
+
+    <br><br>
+
+    <button type="submit">Predict</button>
+
+</form>
+
+{% if prediction %}
+    <h2>{{ prediction }}</h2>
+{% endif %}
+
+<p>This tool provides a machine-learning prediction and is not a medical diagnosis.</p>
+```
+
+</body>
+</html>
